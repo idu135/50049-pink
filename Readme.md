@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Iana Fomenkova](https://up.htmlacademy.ru/adaptive/7/user/50049).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Захарченко](https://htmlacademy.ru/profile/drewtsure).
 
 ---
 
