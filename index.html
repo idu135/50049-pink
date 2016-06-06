@@ -10,104 +10,132 @@
 <body>
   <header class="main-header">
     <div class="logo">PINK</div>
-    <nav class="mavigation-menu">
-      <nav class="nav-menu__item"><a href="#">Главная</a></nav>
-      <nav class="nav-menu__item"><a href="#">Фотографии</a></nav>
-      <nav class="nav-menu__item"><a href="#">Конкурс</a></nav>
-      <nav class="nav-menu__item"><a href="#">HTML ACADEMY</a></nav>
+    <nav class="nav-menu">
+      <ul>
+        <li class="nav-menu__item"><a>Главная</a></li>
+        <li class="nav-menu__item"><a href="#">Фотографии</a></li>
+        <li class="nav-menu__item"><a href="#">Конкурс</a></li>
+        <li class="nav-menu__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
     </nav>
-    <div class="navigation-btn navigation-btn__open"></div>
+    <div class="navigation-menu__btn navigation-menu__btn--open"></div>
   </header>
   <main>
-    <div class="download-application">
+    <section class="download-application">
+      <button class="download-application__text">Скачать приложение</button>
       <div class="download-application__list">
-        <div class="apple"></div>
-        <div class="android"></div>
-        <div class="windows"></div>
+        <div class="download-application__list--apple"></div>
+        <div class="download-application__list--android"></div>
+        <div class="download-application__list--windows"></div>
       </div>
       <p class="download-application__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
-    <div class="slogan">
-      Устали от серости мегаполиса? Нам есть, что вам предложить!
-    </div>
-    <div class="features">
+    </section>
+    <h1 class="slogan">
+      <p class="slogan__1">Устали от серости мегаполиса?</p>
+      <p class="slogan__2">Нам есть, что вам предложить!</p>
+    </h1>
+    <section class="features">
       <div class="features-list">
-        <div class="feature-item">
-          <div class="feature-item__title">Поднимает настроение</div>
-          <div class="feature-item__text">
+        <div class="features-list__item">
+          <div class="feature-list__item--title">Поднимает настроение</div>
+          <div class="feature-list__item--text">
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-item__title">Меняет мир вокруг</div>
-          <div class="feature-item__text">
+        <div class="features-list__item">
+          <div class="feature-list__item--title">Меняет мир вокруг</div>
+          <div class="feature-list__item--text">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </div>
         </div>
-        <div class="feature-item">
-          <div class="feature-item__title">Заводит новых друзей</div>
-          <div class="feature-item__text">
+        <div class="features-list__item">
+          <div class="feature-list__item--title">Заводит новых друзей</div>
+          <div class="feature-list__item--text">
             Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="reviews-slider">
-      <div class="review-slide slide-1">
-        <div class="review-name">Николай Петров</div>
-        <div class="review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
+      <input type="radio" name="slider" id="reviews-slider__controls--1" checked>
+			<input type="radio" name="slider" id="reviews-slider__controls--2">
+			<input type="radio" name="slider" id="reviews-slider__controls--3">
+      <div class="reviews-slider__controls">
+        <label for="reviews-slider__controls--1"></label>
+        <label for="reviews-slider__controls--2"></label>
+        <label for="reviews-slider__controls--3"></label>
+        <div class="reviews-slider__controls--prev"></div>
+        <div class="reviews-slider__controls--next"></div>
       </div>
-      <div class="review-slide slide-2">
-        <div class="review-name"></div>
-        <div class="review-text"></div>
-      </div>
-      <div class="review-slide slide-3">
-        <div class="review-name"></div>
-        <div class="review-text"></div>
+      <div class="reviews-slider__slides">
+        <div class="reviews__slide slide-Nikolay">
+          <div class="reviews__slide__name">Николай Петров</div>
+          <div class="reviews__slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
+        </div>
+        <div class="reviews__slide slide-Peter">
+          <div class="reviews__slide__name"></div>
+          <div class="reviews__slide__text"></div>
+        </div>
+        <div class="reviews__slide slide-Alex">
+          <div class="reviews__slide__name"></div>
+          <div class="reviews__slide__text"></div>
+        </div>
       </div>
     </div>
     <div class="price-slider">
-      <div class="price-slide slide-01">
-        <div class="price-slide__title">Стандарт <br> 3.99 USD</div>
-        <ul class="price-slide__features-list">
-          <li>Розовый фильтр</li>
-          <li>Смайлики</li>
-          <li>Комментарии</li>
-        </ul>
+      <input type="radio" name="slider" id="price-slider__controls--1" checked>
+      <input type="radio" name="slider" id="price-slider__controls--2">
+      <input type="radio" name="slider" id="price-slider__controls--3">
+      <div class="price-slider__controls">
+        <label for="price-slider__controls--1"></label>
+        <label for="price-slider__controls--2"></label>
+        <label for="price-slider__controls--3"></label>
       </div>
-      <div class="price-slide slide-02">
-        <div class="price-slide__title">Стандарт <br> 3.99 USD</div>
-        <ul class="price-slide__features-list">
-          <li>Розовый фильтр</li>
-          <li>Смайлики</li>
-          <li>Комментарии</li>
-        </ul>
-      </div>
-      <div class="price-slide slide-03">
-        <div class="price-slide__title">Стандарт <br> 3.99 USD</div>
-        <ul class="price-slide__features-list">
-          <li>Розовый фильтр</li>
-          <li>Смайлики</li>
-          <li>Комментарии</li>
-        </ul>
+      <div class="price-slider__slides">
+        <div class="price-slider__slide price-slider__slide--basic">
+          <div class="price-slide__title">База <br> 1.99 USD</div>
+          <ul class="price-slide__features-list">
+            <li>Розовый фильтр</li>
+            <li>Смайлики</li>
+            <li>Комментарии</li>
+          </ul>
+        </div>
+        <div class="price-slider__slide price-slider__slide--standard">
+          <div class="price-slide__title">Стандарт <br> 3.99 USD</div>
+          <ul class="price-slide__features-list">
+            <li>Розовый фильтр</li>
+            <li>Смайлики</li>
+            <li>Комментарии</li>
+          </ul>
+        </div>
+        <div class="price-slider__slide price-slider__slide--unlim">
+          <div class="price-slide__title">Анлим <br> 9.99 USD</div>
+          <ul class="price-slide__features-list">
+            <li>Розовый фильтр</li>
+            <li>Смайлики</li>
+            <li>Комментарии</li>
+          </ul>
+        </div>
       </div>
     </div>
     <footer class="page-footer">
       <section class="contact-details">
-        <div class="contact-details__title">Остались вопросы? Свяжитесь с нами!</div>
+        <h1 class="contact-details__title">Остались вопросы? Свяжитесь с нами!</h1>
         <ul class="contact-details__list">
-          <li>
+          <li class="contact-details__tel">
             Звоните <span>+7(812)555-66-66</span>
           </li>
-          <li>
+          <li class="contact-details__mail">
             Пишите <span>mail@hymlacademy.ru</span>
           </li>
-          <li>
+          <li class="contact-details__address">
             Приезжайте в гости: <span>ул/ Большая Конюшенная, 19/8</span>
           </li>
         </ul>
       </section>
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.197884824725!2d30.318705932989428!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1465243696303" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </footer>
   </main>
 </body>
