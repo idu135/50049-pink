@@ -9,16 +9,17 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="logo">PINK</div>
-    <nav class="nav-menu">
-      <ul>
-        <li class="nav-menu__item"><a href="#">Главная</a></li>
+    <h1 class="visually-hidden">Pink</h1>
+    <nav class="nav-menu nav-menu--opened nav-menu--nojs">
+      <button class="nav-menu__toggle"></button>
+      <ul class="nav-menu__items">
+        <li class="nav-menu__item nav-logo"><a><img src="#" alt="Логотип" width="80px" height="30px"></a></li>
+        <li class="nav-menu__item nav-menu__item--active"><a>Главная</a></li>
         <li class="nav-menu__item"><a href="#">Фотографии</a></li>
         <li class="nav-menu__item"><a href="#">Конкурс</a></li>
         <li class="nav-menu__item"><a href="#">HTML ACADEMY</a></li>
       </ul>
     </nav>
-    <div class="navigation-menu__btn navigation-menu__btn--open"></div>
   </header>
   <main>
     <section class="about-contest">
@@ -36,7 +37,7 @@
       </fieldset>
       <fieldset class="form__achievements">
         <legend>Ваши безбашенные достижения в путешествии</legend>
-        <div class="achievement-checkboxes">
+        <div class="checkboxes">
             <input type="checkbox" id="selfie" checked>
             <label for="selfie">Сделал селфи с акулой</label>
             <input type="checkbox" id="beach" checked>
@@ -69,7 +70,7 @@
       </fieldset>
       <fieldset class="form__application">
         <legend>С каким приложением путешествовали?</legend>
-        <div class="application-radiolist">
+        <div class="radiolist">
           <input type="radio" id="ios" name="application-type" checked>
           <label for="ios">Pink для iOS</label>
           <input type="radio" id="android" name="application-type">
@@ -85,9 +86,9 @@
     <div class="logo"></div>
     <div class="social-btns">
       <ul>
-        <li><a href="#" class="social-btn__tw"></a></li>
-        <li><a href="#" class="social-btn__fb"></a></li>
-        <li><a href="#" class="social-btn__yt"></a></li>
+        <li><a href="#" class="social-btn social-btn--tw"></a></li>
+        <li><a href="#" class="social-btn social-btn--fb"></a></li>
+        <li><a href="#" class="social-btn social-btn--yt"></a></li>
       </ul>
     </div>
     <div class="copyright">Разработано<img src="" alt=""></div>
