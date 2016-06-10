@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink - главная страница</title>
+  <link rel="stylesheet" type="text/css" href="css/style.less"/>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="visually-hidden">Pink</h1>
+    <nav class="nav-menu nav-menu--opened nav-menu--nojs">
+      <button class="nav-menu__toggle"></button>
+      <ul class="nav-menu__items">
+        <li class="nav-menu__item nav-logo"><a><img src="#" alt="Логотип" width="80px" height="30px"></a></li>
+        <li class="nav-menu__item nav-menu__item--active"><a>Главная</a></li>
+        <li class="nav-menu__item"><a href="#">Фотографии</a></li>
+        <li class="nav-menu__item"><a href="#">Конкурс</a></li>
+        <li class="nav-menu__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contest">
+      <h1 class="contest__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <div class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</div>
+    </section>
+    <form class="form" method="post" action="#">
+      <fieldset class="form__name">
+        <label for="last-name"></label>
+        <input type="text" id="last-name" placeholder="Укажите фамилию">
+        <label for="first-name"></label>
+        <input type="text" id="first-name" placeholder="Введите ваше имя">
+        <label for="middle-name"></label>
+        <input type="text" id="middle-name" placeholder="Ну и отчество тоже">
+      </fieldset>
+      <fieldset class="form__achievements">
+        <legend>Ваши безбашенные достижения в путешествии</legend>
+        <div class="form__checkboxes">
+            <input type="checkbox" id="selfie" checked>
+            <label for="selfie">Сделал селфи с акулой</label>
+            <input type="checkbox" id="beach" checked>
+            <label for="beach">Обгорел на пляже</label>
+            <input type="checkbox" id="norris">
+            <label for="norris">Видел Чака Норриса</label>
+            <div>
+              <input type="checkbox" id="gifts">
+              <label for="gifts">Накупил сувениров</label>
+            </div>
+            <div>
+              <input type="checkbox" id="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__contact-details">
+        <div>
+          <label for="user-tel">Номерок телефончика</label>
+          <input type="text" id="user-tel" placeholder="Номер, пожалуйста">
+        </div>
+        <div>
+          <label for="user-email">Адресок почты</label>
+          <input type="text" id="user-email" placeholder="Номер, пожалуйста">
+        </div>
+      </fieldset>
+      <fieldset class="form__application">
+        <legend>С каким приложением путешествовали?</legend>
+        <div class="form__radiolist">
+          <input type="radio" id="ios" name="application-type" checked>
+          <label for="ios">Pink для iOS</label>
+          <input type="radio" id="android" name="application-type">
+          <label for="android">Pink на Android</label>
+          <input type="radio" id="windows" name="application-type">
+          <label for="windows">Windows Phone</label>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="logo"></div>
+    <div class="social">
+      <ul>
+        <li><a href="#" class="social__btn social__btn--tw"></a></li>
+        <li><a href="#" class="social__btn social__btn--fb"></a></li>
+        <li><a href="#" class="social__btn social__btn--yt"></a></li>
+      </ul>
+    </div>
+    <div class="copyright">Разработано<img src="" alt=""></div>
+    <div></div>
+  </footer>
+</body>

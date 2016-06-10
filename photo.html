@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink - главная страница</title>
+  <link rel="stylesheet" type="text/css" href="css/style.less"/>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="visually-hidden">Pink</h1>
+    <nav class="nav-menu nav-menu--opened nav-menu--nojs">
+      <button class="nav-menu__toggle"></button>
+      <ul class="nav-menu__items">
+        <li class="nav-menu__item nav-logo"><a><img src="#" alt="Логотип" width="80px" height="30px"></a></li>
+        <li class="nav-menu__item nav-menu__item--active"><a>Главная</a></li>
+        <li class="nav-menu__item"><a href="#">Фотографии</a></li>
+        <li class="nav-menu__item"><a href="#">Конкурс</a></li>
+        <li class="nav-menu__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="users-pictures">
+      <h1 class="users-pictures__title">Фотографии пользователей</h1>
+      <div class="users-pictures__text">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </div>
+      <div class="posts-list">
+        <div class="post-item post-item--main">
+          <img  class="post-item__picture" src="" alt="Красивый вид">
+          <div class="post-item__name">Анна</div>
+          <span class="post-item__time">(5 минут назад)</span>
+          <p class="post-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+          <div class="post-item__like">Нравится<span>215</span></div>
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="Фото">
+          <div class="post-item__name">Левон</div>
+          <span class="post-item__time">(5 часов назад)</span>
+          <p class="post-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="post-item__like">Нравится<span>356</span></div>
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="Фото">
+          <div class="post-item__name">Антон</div>
+          <span class="post-item__time">(12 часов назад)</span>
+          <p class="post-item__text">Соседи будут рады!</p>
+          <div class="post-item__like">Нравится<span>666</span></div>
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="Фото">
+          <div class="post-item__name">Борис</div>
+          <span class="post-item__time">20 часов назад</span>
+          <p class="post-item__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <div class="post-item__like">Нравится<span>215</span></div>
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="">
+          <div class="post-item__name">Сергей</div>
+          <span class="post-item__time">25 часов назад</span>
+          <p class="post-item__text">Самая кубанская в мире!</p>
+          <div class="post-item__like">Нравится<span>4</span></div>
+
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="Фото">
+          <div class="post-item__name">Максим</div>
+          <span class="post-item__time">(40 часов назад)</span>
+          <p class="post-item__text">
+            Где снег-то?
+          </p>
+          <div class="post-item__like">Нравится<span>150</span></div>
+        </div>
+        <div class="post-item">
+          <img  class="post-item__picture" src="" alt="Фото">
+          <div class="post-item__name">Надежда</div>
+          <span class="post-item__time">45 часов назад</span>
+          <p class="post-item__text">Всем GM и взаимные лайки!</p>
+          <div class="post-item__like">Нравится<span>2560</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="slogan">
+      <h1>Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h1>
+    </section>
+    <section>
+      <form class="publish-post" action="#" method="post">
+        <div class="publish-post__picture"><img src="#" alt=""></div>
+        <div class="publish-post__settings">
+          <ul>
+            <li class="publish-post__tools-crop">
+              <img src="" alt="обрезать">
+              <div class="publish-post__tools-scale">
+                <div class="publish-post__tools-control"></div>
+              </div>
+            </li>
+            <li class="publish-post__tools-fill">
+              <img src="" alt="заливка">
+              <div class="publish-post__tools-scale">
+                <div class="publish-post__tools-control"></div>
+              </div>
+            </li>
+            <li class="publish-post__tools-brightness">
+              <img src="" alt="яркость">
+              <div class="publish-post__tools-scale">
+                <div class="publish-post__tools-control"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="submit">Отправить</button>
+        <button class="cancel">Отменить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="logo"></div>
+    <div class="social">
+      <ul>
+        <li><a href="#" class="social__btn social__btn--tw"></a></li>
+        <li><a href="#" class="social__btn social__btn--fb"></a></li>
+        <li><a href="#" class="social__btn social__btn--yt"></a></li>
+      </ul>
+    </div>
+    <div class="copyright">Разработано<img src="" alt=""></div>
+  </footer>
+</body>
