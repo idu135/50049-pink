@@ -64,9 +64,9 @@
       </div>
     </section>
     <div class="reviews-slider">
-      <input type="radio" name="slider" id="reviews-slider__1" checked>
-			<input type="radio" name="slider" id="reviews-slider__2">
-			<input type="radio" name="slider" id="reviews-slider__3">
+      <input type="radio" name="reviews-slider" id="reviews-slider__1" checked>
+			<input type="radio" name="reviews-slider" id="reviews-slider__2">
+			<input type="radio" name="reviews-slider" id="reviews-slider__3">
       <div class="reviews-slider__controls">
         <label for="reviews-slider__1"></label>
         <label for="reviews-slider__2"></label>
@@ -90,74 +90,48 @@
       </div>
     </div>
     <div class="price-slider">
-      <input type="radio" name="slider" id="price-slider__1" checked>
-      <input type="radio" name="slider" id="price-slider__2">
-      <input type="radio" name="slider" id="price-slider__3">
+      <input type="radio" name="price-slider" id="price-slider__1" checked>
+      <input type="radio" name="price-slider" id="price-slider__2">
+      <input type="radio" name="price-slider" id="price-slider__3">
       <div class="price-slider__controls">
         <label for="price-slider__1"></label>
         <label for="price-slider__2"></label>
         <label for="price-slider__3"></label>
       </div>
-      <!-- <div class="price-slider__slides">
-        <div class="price-slider__slide price-slider__slide--basic">
-          <div class="price-slider__slide-title">База <br> 1.99 USD</div>
-          <ul class="price-slider__slide-features">
-            <li>Розовый фильтр</li>
-            <li>Смайлики</li>
-            <li>Комментарии</li>
-          </ul>
-        </div>
-        <div class="price-slider__slide price-slider__slide--standard">
-          <div class="price-slider__slide-title">Стандарт <br> 3.99 USD</div>
-          <ul class="price-slider__slide-features">
-            <li>Розовый фильтр</li>
-            <li>Смайлики</li>
-            <li>Комментарии</li>
-          </ul>
-        </div>
-        <div class="price-slider__slide price-slider__slide--unlim">
-          <div class="price-slider__slide-title">Анлим <br> 9.99 USD</div>
-          <ul class="price-slider__slide-features">
-            <li>Розовый фильтр</li>
-            <li>Смайлики</li>
-            <li>Комментарии</li>
-          </ul>
-        </div>
-      </div> -->
       <div class="price-slider__slides">
         <table>
           <tr>
             <th class="hidden mobile-hidden"></th>
             <th colspan="2">База <span>1,99 USD<span></th>
-            <th colspan="2">Стандарт <span>3,99 USD</span></th>
+            <th colspan="2" class="hit">Стандарт <span>3,99 USD</span></th>
             <th colspan="2">Анлим <span>9,99 USD</span></th>
           </tr>
           <tr>
             <td class="mobile-hidden">Розовый фильтр</td>
             <td class="tablet-hidden">Розовый фильтр</td>
-            <td class="price__option price__option--included">Галочка</td>
+            <td><div class="price__option price__option--included"></div></td>
             <td class="tablet-hidden">Розовый фильтр</td>
-            <td class="price__option">Галочка</td>
+            <td><div class="price__option price__option--included"></td>
             <td class="tablet-hidden">Розовый фильтр</td>
-            <td>Галочка</td>
+            <td><div class="price__option price__option--included"></td>
           </tr>
           <tr>
             <td class="mobile-hidden">Смайлики</td>
             <td class="tablet-hidden">Смайлики</td>
-            <td class="price__option">Крестик</td>
+            <td><div class="price__option price__option--excluded"></td>
             <td class="tablet-hidden">Смайлики</td>
-            <td class="price__option">Галочка</td>
+            <td><div class="price__option price__option--included"></td>
             <td class="tablet-hidden">Смайлики</td>
-            <td class="price__option">Галочка</td>
+            <td><div class="price__option price__option--included"></td>
           </tr>
           <tr>
             <td class="mobile-hidden">Комментарии</td>
             <td class="tablet-hidden">Комментарии</td>
-            <td class="price__option">Крестик</td>
+            <td><div class="price__option price__option--excluded"></td>
             <td class="tablet-hidden">Комментарии</td>
-            <td class="price__option">Крестик</td>
+            <td><div class="price__option price__option--excluded"></td>
             <td class="tablet-hidden">Комментарии</td>
-            <td class="price__option">Галочка</td>
+            <td><div class="price__option  price__option--included"></td>
           </tr>
         </table>
       </div>
@@ -179,7 +153,7 @@
         </ul>
       </section>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.197884824725!2d30.318705932989428!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1465243696303" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.197884824725!2d30.318705932989428!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1465243696303" width="100%" height="202" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </footer>
   </main>
