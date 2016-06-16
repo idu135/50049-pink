@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pink - главная страница</title>
-  <link rel="stylesheet" type="text/css" href="css/style.less"/>
+  <title>Форма обратной связи</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-  <header class="main-header">
-    <h1 class="visually-hidden">Pink</h1>
+  <header class="page-header">
     <nav class="nav-menu nav-menu--opened nav-menu--nojs">
       <button class="nav-menu__toggle"></button>
       <ul class="nav-menu__items">
-        <li class="nav-menu__item nav-logo"><a><img src="#" alt="Логотип" width="80px" height="30px"></a></li>
-        <li class="nav-menu__item nav-menu__item--active"><a>Главная</a></li>
+        <li class="nav-menu__item nav-logo"><a><img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="80px" height="30px"></a></li>
+        <li class="nav-menu__item"><a href="#">Главная</a></li>
         <li class="nav-menu__item"><a href="#">Фотографии</a></li>
-        <li class="nav-menu__item"><a href="#">Конкурс</a></li>
+        <li class="nav-menu__item nav-menu__item--active"><a>Конкурс</a></li>
         <li class="nav-menu__item"><a href="#">HTML ACADEMY</a></li>
       </ul>
     </nav>
@@ -93,4 +92,20 @@
     <div class="copyright">Разработано<img src="" alt=""></div>
     <div></div>
   </footer>
+  <script>
+      var navMenu = document.querySelector('.nav-menu');
+      var navToggle = document.querySelector('.nav-menu__toggle');
+
+      navMenu.classList.remove('nav-menu--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMenu.classList.contains('nav-menu--closed')) {
+          navMenu.classList.remove('nav-menu--closed');
+          navMenu.classList.add('nav-menu--opened');
+        } else {
+          navMenu.classList.add('nav-menu--closed');
+          navMenu.classList.remove('nav-menu--opened');
+        }
+      });
+    </script>
 </body>
