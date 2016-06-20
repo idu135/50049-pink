@@ -1,14 +1,42 @@
 .form{
+  padding-left: 20px;
+  padding-right: 20px;
 
   fieldset{
+    border: none;
+    margin: 0;
+    padding-top: 35px;
+  }
+
+  label{
+    color: #d22856;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  legend{
+    padding: 0;
+    margin: 0;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  input{
+    border: 2px solid #e5e5e5;
+    outline: none;
+
+    &::-webkit-input-placeholder{color: #283645; font-size: 18px;}
+    &::-moz-placeholder{color: #283645; font-size: 18px;}
+    &:-ms-input-placeholder{color: #283645; font-size: 18px;}
   }
 
   &__name{
 
     label{
-      color: #d22856;
       margin-bottom: 13px;
-      display: inline-block;
     }
 
     input{
@@ -16,9 +44,98 @@
       height: 60px;
       padding: 15px;
       margin-bottom: 20px;
-
-      // &::-webkit-input-placeholder {}
-      // &:-moz-placeholder {}
     }
+  }
+
+  &__achievements{
+    background: #f2f2f2;
+
+    legend{
+      margin-bottom: 38px;
+    }
+
+    input{
+      display: none;
+    }
+
+    label{
+      display: block;
+      padding-left: 70px;
+      position: relative;
+      margin-bottom: 63px;
+      color: #283645;
+
+      &:before{
+        position: absolute;
+        content: "";
+        width: 39px;
+        height:39px;
+        left: 0;
+        top: 50%;
+        margin-top: -19.5px;
+        background: url("../img/sprite/checkbox.png");
+      }
+    }
+
+    input[id="selfie"]:checked ~ label[for="selfie"]:before,
+    input[id="beach"]:checked ~ label[for="beach"]:before,
+    input[id="norris"]:checked ~ label[for="norris"]:before,
+    input[id="gifts"]:checked ~ label[for="gifts"]:before,
+    input[id="tower"]:checked ~ label[for="tower"]:before,
+    input[id="hotel"]:checked ~ label[for="hotel"]:before{
+      background: url("../img/sprite/checkbox-checked.png");
+    }
+  }
+
+  &__contact-details{
+
+    label{
+      color: #d22856;
+      display: inline-block;
+      margin-bottom: 15px;
+
+    }
+
+    input{
+      width: 100%;
+      height: 60px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__application{
+    background-color: #f2f2f2;
+
+    input{
+      display: none;
+    }
+
+    label{
+      display: block;
+      padding-left: 70px;
+      position: relative;
+      margin-bottom: 63px;
+      color: #283645;
+
+      &:before{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height:40px;
+        left: 0;
+        top: 50%;
+        margin-top: -20px;
+        background: url("../img/sprite/radio.png");
+      }
+    }
+
+    input[id="ios"]:checked ~ label[for="ios"]:before,
+    input[id="android"]:checked ~ label[for="android"]:before,
+    input[id="windows"]:checked ~ label[for="windows"]:before{
+      background: url("../img/sprite/radio-checked.png");
+    }
+
+
   }
 }
