@@ -104,27 +104,34 @@
       <form class="publish-post" action="#" method="post">
         <div class="publish-post__picture"><img src="img/photo-7-mobile@1x.jpg" alt=""></div>
         <div class="publish-post__settings">
-          <ul>
-            <li class="publish-post__tools-crop">
-              <img src="" alt="обрезать">
-              <div class="publish-post__tools-scale">
-                <div class="publish-post__tools-control"></div>
+          <input type="checkbox" id="crop" checked>
+          <input type="checkbox" id="fill">
+          <input type="checkbox" id="brightness">
+          <div class="publish-post__tools-labels">
+            <label for="crop">обрезать</label>
+            <label for="fill">залить</label>
+            <label for="brightness">яркость</label>
+          </div>
+          <div class="publish-post__scales-list">
+            <div class="publish-post__scale-wr publish-post__scale-wr--crop">
+              <div class="publish-post__scale">
+                <div class="publish-post__control"></div>
               </div>
-            </li>
-            <li class="publish-post__tools-fill">
-              <img src="" alt="заливка">
-              <div class="publish-post__tools-scale">
-                <div class="publish-post__tools-control"></div>
+            </div>
+            <div class="publish-post__scale-wr publish-post__scale-wr--fill">
+              <div class="publish-post__scale">
+                <div class="publish-post__control"></div>
               </div>
-            </li>
-            <li class="publish-post__tools-brightness">
-              <img src="" alt="яркость">
-              <div class="publish-post__tools-scale">
-                <div class="publish-post__tools-control"></div>
+            </div>
+            <div class="publish-post__scale-wr publish-post__scale-wr--brightness">
+              <div class="publish-post__scale">
+                <div class="publish-post__control"></div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
+
+
         <button type="submit">Отправить</button>
         <button class="cancel">Отменить</button>
       </form>
