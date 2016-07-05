@@ -64,6 +64,7 @@
     width: 100%;
     background-color: #000;
     opacity: .3;
+    top: 5px;
   }
 
   .nav-menu__items{
@@ -108,11 +109,15 @@
     border-bottom: 1px solid #000;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
   }
 }
 
-.nav-menu__item--active a{
+.nav-menu__item a[href]:hover{
     color: #d22856;
+}
+.nav-menu__item a[href]:active{
+    color: #d22856;
+    opacity: .3;
 }
