@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  &:before{
+  &:before{ // треугольник сверху
     position: absolute;
     content: "";
     width: 100%;
@@ -11,5 +11,17 @@
     left: 0;
     background: url("../img/map-triangle.png") no-repeat;
     background-size: 100% 100%;
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    border: 10px solid #d22856;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
   }
 }
