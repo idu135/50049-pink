@@ -38,8 +38,42 @@
     font-weight: 300;
   }
 
-  &__img{
-    height: 275px;
-    overflow: hidden;
+  &__item-img{
+    display: none;
+  }
+
+}
+
+.features__item--friends .features__item-img{
+  display: block;
+  height: 275px;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+
+  .features{
+    height: 490px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url("../img/features-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 40px 15px;
+    overflow: visible;
+
+    &__list{
+      width: 50%;
+      margin-left: 50%;
+      text-align: left;
+    }
+
+    &__item-text{
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .features__item--friends .features__item-img{
+    display: none;
   }
 }
